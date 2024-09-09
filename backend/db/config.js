@@ -1,2 +1,2 @@
-const mongoose =require('mongoose');
-mongoose.connect("mongodb://localhost:27017/dashE-comm");
+ const mongoose =require('mongoose');
+mongoose.connect("mongodb+srv://ng61315:<#NITINgupta92>@cluster0.fantk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
