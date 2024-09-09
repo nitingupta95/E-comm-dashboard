@@ -1,4 +1,4 @@
-const express = require('express');
+ const express = require('express');
 const cors = require('cors');
 require('./db/config.js');
 const User = require('./db/User.js');
@@ -7,7 +7,13 @@ const mongoose = require('mongoose');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin:["https://deploy-mern-1whq.vercel.app"],
+        methods:["POST","GET","PUT","DELETE"],
+        credentials:true
+    }
+));
 
 
 app.post('/signup', async (req, resp) => {
