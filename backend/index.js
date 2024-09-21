@@ -16,7 +16,7 @@ app.use(cors(
 ));
 
 
-app.post('/signup', async (req, resp) => {
+app.post('https://e-comm-dashboard-ui16.vercel.app/signup', async (req, resp) => {
     try {
         let user = new User(req.body);
         let result = await user.save();
